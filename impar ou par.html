@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html>
+<head>
+<link href="config.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>IMC</title>
+</head>
+<body><center>
+<font size="+4" face="Impact, Haettenschweiler, Franklin Gothic Bold, Arial Black, sans-serif" color="#FFFFFF">
+<h1>IMC</h1>
+<p>Indice de massa corporal</p>
+</font>
+<div id="principal">
+<font size="+2" color="#000000" face="Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace">
+
+<script type="text/javascript">
+var a =prompt("digite Sua altura");
+var p =prompt("digite seu peso");
+var x = parseFloat(a) * parseFloat (a);
+var z = parseFloat(p) / parseFloat (x);
+var b = parseFloat(p) * 35; 
+var i = parseFloat(b) / 1000;
+ if(z <= 16.9) 
+ {
+  document.write("Você esta muito abaixo do peso...       precisa consultar um nutricionista e se cuidar! <br> seu IMC foi " + z.toFixed(2));
+ }
+	 else if(z >= 17 && z<18.4 )
+ {
+  document.write("Você esta abaixo do peso...      Precisa comer mais e cuidar-se melhor! <br> seu IMC foi " + z.toFixed(2));
+ }
+ 	 else if(z >= 18.5 && z <= 24.9)
+ {
+  document.write("Você esta no peso ideal...      Parabens!!!   continue assim! <br> seu IMC foi " + z.toFixed(2));
+ }
+ 	 else if(z >= 25 && z<29.9 )
+ {
+  document.write("Você esta acima do peso...      Precisa praticar mais exercicios fisicos e beber bastante agua! <br> seu IMC foi " + z.toFixed(2));
+ }
+ 	 else if(z >= 30 && z<34.9 )
+ {
+  document.write("Você esta com obesidade 1...      Precisa praticar mais exercicios fisicos e beber bastante agua! <br> seu IMC foi " + z.toFixed(2));
+ }
+  	 else if(z >= 35 && z<39.9 )
+ {
+  document.write("Você esta com obesidade 2...      Precisa praticar mais exercicios fisicos e beber bastante agua! <br> seu IMC foi " + z.toFixed(2));
+ }
+  	 else if(z>=40)
+ {
+  document.write("Você esta com obesidade 3...      Precisa praticar mais exercicios fisicos e beber bastante agua! <br> seu IMC foi " + z.toFixed(2));
+ }
+  else
+  {
+	   document.write("Desculpa!  não entendi sua resposta");
+	  }
+  document.write("<br>Você precisa Beber " + i.toFixed(2) + " Litros de agua ou mais por dia");
+</script>
+</div>
+</body>
+</html>
+
+
+
